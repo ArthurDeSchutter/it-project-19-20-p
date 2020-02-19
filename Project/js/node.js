@@ -1,5 +1,5 @@
 //create the express server
-const express = require('express')
+let express = require('express')
 const app = express()
 const port = 3000
 
@@ -13,11 +13,12 @@ let url = 'https://geodata.antwerpen.be/arcgissql/rest/services/P_Portal/portal_
 //request module to call the url
 const request = require("request");
 
+
+//create the json variable outside the scope so we can access it outside the funcion for late use
+let json
 request.get(url, (error, response, body) => {
   //the url returns a string but we want to parse it to json
-  let json = JSON.parse(body);
-  //console.log(json.features[0].attributes.NAAM);
-  for(let i = 0;i<json.features.length;i++){
-    console.log(json.features[i].attributes.NAAM);
-}
-});
+   json = JSON.parse(body);
+
+  //JSON TEST
+  console.log(json.features[0].attributes.NAAM);
