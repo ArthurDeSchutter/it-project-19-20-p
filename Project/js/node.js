@@ -22,3 +22,4 @@ request.get(url, (error, response, body) => {
 
   //JSON TEST
   console.log(json.features[0].attributes.NAAM);
+})
