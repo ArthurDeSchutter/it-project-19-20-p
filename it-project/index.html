@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="nl-be">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Het defer attribuut zorgt dat het script pas wordt uitgevoerd zodra de pagina geladen is -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.6.0/leaflet.js" integrity="sha256-fNoRrwkP2GuYPbNSJmMJOCyfRB2DhPQe0rGTgzRsyso=" crossorigin="anonymous" defer></script>
+    
+    <!-- Voeg het mapStyle.css bestand toe. Hierin zetten we alle css specifiek voor de kaart -->
+    <link rel="stylesheet" href="./map.css">
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+   integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+   crossorigin="" defer></script>
+
+    <!-- Voeg het mapScript.js script toe aan de pagina en laad het als de pagina geladen is. -->
+    <script src="./mapscript.js" defer></script>
+    <!--cdn van antwerpen-->
+    <link rel="stylesheet" href="https://cdn.antwerpen.be/core_branding_scss/4.0.0/main.min.css">
+    <!--2e cdn van antwerpen-->
+    <link rel="stylesheet" href="https://cdn.antwerpen.be/core_branding_scss/4.0.0/antwerpen.min.css">
+    
+
+    <title>stad antwerpen</title>
+</head>
+<body>
+    
+    <div class="grid-container">
+        <div id="nav-home">
+    <header id="home">
+            <img id="logo" src="foto.jpg">
+            <div id="search-container">
+                <form action="/action_page.php">
+                  <input type="text" placeholder="Search.." name="search">
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+                <nav >
+                <ul>
+                    <a href="#"><li class="navi">home</li></a>                  
+                    <a href="#"><li class="navi">over-ons</li></a>
+                    <a href="#"><li class="navi">contact</li></a>
+                    
+                </ul>
+            </nav>
+        </header>
+    </div>
+<article>
+    <h1 id="titel">De groene stad Antwerpen</h1>
+    <div id="mapid"></div>
+</article>
+
+<footer>
+<p>&copy;2020 Antwerpen.be |Privacy & gebruiksvoorwaarden</p>
+</footer>
+</div>  
+</body>
+</html>
