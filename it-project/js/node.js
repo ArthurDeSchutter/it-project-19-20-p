@@ -6,6 +6,10 @@ const port = 3000
 //fix to view engine error
 app.set("view engine","ejs");
 
+//set the standard dir for css files to public
+app.use(express.static(path.join(__dirname, 'public')));
+
+
 app.listen(port, () =>   console.log(`Express started on http://localhost:3000; press Ctrl-C to terminate.`)
 )
 app.get('/', (req,res) => {

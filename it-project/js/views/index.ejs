@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./main.css">
-    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="/style.css" type="text/css">
 
     <!-- Het defer attribuut zorgt dat het script pas wordt uitgevoerd zodra de pagina geladen is -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.6.0/leaflet.js" integrity="sha256-fNoRrwkP2GuYPbNSJmMJOCyfRB2DhPQe0rGTgzRsyso=" crossorigin="anonymous" defer></script>
     
     <!-- Voeg het mapStyle.css bestand toe. Hierin zetten we alle css specifiek voor de kaart -->
-    <link rel="stylesheet" href="./map.css">
+    <link rel="stylesheet" href="/map.css" type="text/css">
     
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
     integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
     crossorigin=""/>
     <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
@@ -20,11 +19,11 @@
    crossorigin="" defer></script>
 
     <!-- Voeg het mapScript.js script toe aan de pagina en laad het als de pagina geladen is. -->
-    <script src="./mapscript.js" defer></script>
+    <script src="/mapscript.js" defer></script>
     <!--cdn van antwerpen-->
-    <link rel="stylesheet" href="https://cdn.antwerpen.be/core_branding_scss/4.0.0/main.min.css">
+    <link rel="stylesheet" href="https://cdn.antwerpen.be/core_branding_scss/4.0.0/main.min.css" type="text/css">
     <!--2e cdn van antwerpen-->
-    <link rel="stylesheet" href="https://cdn.antwerpen.be/core_branding_scss/4.0.0/antwerpen.min.css">
+    <link rel="stylesheet" href="https://cdn.antwerpen.be/core_branding_scss/4.0.0/antwerpen.min.css" type="text/css">
     
 
     <title>stad antwerpen</title>
@@ -53,7 +52,7 @@
 <article>
     <h1 id="titel">De groene stad Antwerpen</h1>
     <div id="mapid"></div>
-    <p> <%= cultuurData.features[0].attributes.naam %> </p>
+    <p> <%= cultuurData.features[0].attributes.NAAM %> </p>
 
 </article>
 
